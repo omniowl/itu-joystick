@@ -123,7 +123,7 @@ private void Joystick_YellowButtonReleased(object sender, System.EventArgs e)
 ```
 
 Making a controller that just listens for events that are polled every frame and then letting whoever needs to know about it
-know through events. Fairly simple. The code currently in the repo (23/09/2018) then supports the below:
+know through events. Fairly simple. The code currently in the repo (23/09/2018) then supports the below (Takes you to a YouTube video):
 
 [![](http://img.youtube.com/vi/vcr0sIwLlmo/0.jpg)](http://www.youtube.com/watch?v=vcr0sIwLlmo "Xin-Mo Dual Arcade demonstration in Unity 2018")
 
