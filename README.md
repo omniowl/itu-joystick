@@ -43,7 +43,9 @@ away the Black "Start Button") and 4 buttons that acts as the Axis.
     * UP - Joystick1Button7
 
 With that in mind do not fret! A script have already been made to map all of this to System Events in C# using the `IJoyPad`
-and `JoystickController` files. This is merely left here for your convenience, should you want to write your own implementation.
+and `JoystickController` files. This is merely left here for your convenience, should you want to write your own implementation. You can make a controller object by Right-Clicking in your Assets and go to Create->Joystick Controller like so:
+
+![Right Click Menu](https://i.imgur.com/oCShe7V.png)
 
 ## For Testing
 There is a controller already written for testing purposes since the arcade controller won't be physically accessible unless you test on the actual arcade (which will be seldom compared to on your computer). The `JoystickControllerTest` class is an extension of the `JoystickController` class, so you can still ask for a `JoystickController` in your production scripts and simply use the test Scripts in their place. When you create a `ScriptableObject` of type `JoystickControllerTest` it has a bunch of inputs that can be assigned from your keyboard (Or even a JoystickController port, should you wish to).
