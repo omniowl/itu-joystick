@@ -1,7 +1,7 @@
 # Introduction
 This is the joystick example made for the ITU Joystick setup. This is just some barebones documentation.
 
-## Some Notes
+## Please Note
 All of the input is handled like Joystick Buttons, even the stick. The reason for this is because whoever produced the Arcade Stick must
 have been overworked or something, because the axis goes from 1 to -2 which makes no sense at all.
 So to combat this we turned the stick into buttons. This doesn't actually matter because there is no in-between states on this stick
@@ -44,6 +44,9 @@ away the Black "Start Button") and 4 buttons that acts as the Axis.
 
 With that in mind do not fret! A script have already been made to map all of this to System Events in C# using the `IJoyPad`
 and `JoystickController` files. This is merely left here for your convenience, should you want to write your own implementation.
+
+## Side Note
+There is a controller already written for testing purposes since the arcade controller won't be physically accessible unless you test on the actual arcade (which will be seldom compared to on your computer). The `JoystickControllerTest` class is an extension of the `JoystickController` class, so you can still ask for a `JoystickController` in your production scripts and simply use the test Scripts in their place. When you create a `ScriptableObject` of type `JoystickControllerTest` it has a bunch of inputs that can be assigned from your keyboard (Or even a JoystickController port, should you wish to).
 
 # IJoyPad
 The `IJoyPad` interface is made for what is considered a necessary implementation for using this setup. But as mentioned above you can
