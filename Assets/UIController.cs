@@ -140,24 +140,49 @@ public class UIController : MonoBehaviour
     {
         InputEventArgs args = (InputEventArgs)e;
         int imageIndex = 0;
-        switch (args.GetKey())
+        KeyCode key = args.GetKey();
+
+        // For development purposes. Can be commented out or should be removed for production.
+        if (joystick.GetType() == typeof(JoystickControllerTest))
         {
-            case KeyCode.Joystick2Button4:
-            case KeyCode.Joystick1Button4:
+            if (key == joystick.RIGHT)
+            {
                 imageIndex = 0;
-                break;
-            case KeyCode.Joystick2Button5:
-            case KeyCode.Joystick1Button5:
+            }
+            else if (key == joystick.LEFT)
+            {
                 imageIndex = 1;
-                break;
-            case KeyCode.Joystick2Button6:
-            case KeyCode.Joystick1Button6:
+            }
+            else if (key == joystick.DOWN)
+            {
                 imageIndex = 2;
-                break;
-            case KeyCode.Joystick2Button7:
-            case KeyCode.Joystick1Button7:
+            }
+            else if (key == joystick.UP)
+            {
                 imageIndex = 3;
-                break;
+            }
+        }
+        else
+        {
+            switch (key)
+            {
+                case KeyCode.Joystick2Button4:
+                case KeyCode.Joystick1Button4:
+                    imageIndex = 0;
+                    break;
+                case KeyCode.Joystick2Button5:
+                case KeyCode.Joystick1Button5:
+                    imageIndex = 1;
+                    break;
+                case KeyCode.Joystick2Button6:
+                case KeyCode.Joystick1Button6:
+                    imageIndex = 2;
+                    break;
+                case KeyCode.Joystick2Button7:
+                case KeyCode.Joystick1Button7:
+                    imageIndex = 3;
+                    break;
+            }
         }
         Color color = directionImages[imageIndex].color;
         directionImages[imageIndex].color = new Color(color.r, color.g, color.b, NormalAlpha);
