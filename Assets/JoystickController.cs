@@ -9,16 +9,16 @@ public class JoystickController : ScriptableObject, IJoyPad
     [Range(1, 2)]
     public int PlayerId = 1;
 
-    private KeyCode YELLOW;
-    private KeyCode RED;
-    private KeyCode GREEN;
-    private KeyCode BLUE;
-    private KeyCode WHITE;
-    private KeyCode BLACK;
-    private KeyCode RIGHT;
-    private KeyCode LEFT;
-    private KeyCode DOWN;
-    private KeyCode UP;
+    internal KeyCode YELLOW;
+    internal KeyCode RED;
+    internal KeyCode GREEN;
+    internal KeyCode BLUE;
+    internal KeyCode WHITE;
+    internal KeyCode BLACK;
+    internal KeyCode RIGHT;
+    internal KeyCode LEFT;
+    internal KeyCode DOWN;
+    internal KeyCode UP;
 
     public event EventHandler YellowButtonPressed;
     public event EventHandler YellowButtonReleased;
@@ -38,10 +38,10 @@ public class JoystickController : ScriptableObject, IJoyPad
     public event EventHandler StickDirectionUp;
     public event EventHandler StickDirectionMiddle;
 
-    private Dictionary<KeyCode, Action<InputEventArgs>> FunctionDictionaryDown;
-    private Dictionary<KeyCode, Action<InputEventArgs>> FunctionDictionaryUp;
+    internal Dictionary<KeyCode, Action<InputEventArgs>> FunctionDictionaryDown;
+    internal Dictionary<KeyCode, Action<InputEventArgs>> FunctionDictionaryUp;
 
-    public void init()
+    public virtual void init()
     {
         SetupKeyCodes();
         FunctionDictionaryDown = new Dictionary<KeyCode, Action<InputEventArgs>>
@@ -73,7 +73,7 @@ public class JoystickController : ScriptableObject, IJoyPad
         };
     }
 
-    public void SetupKeyCodes()
+    public virtual void SetupKeyCodes()
     {
 
         switch (PlayerId)
@@ -108,7 +108,7 @@ public class JoystickController : ScriptableObject, IJoyPad
         }
     }
 
-    public void YellowButtonFire(InputEventArgs e)
+    public virtual void YellowButtonFire(InputEventArgs e)
     {
         if (YellowButtonPressed != null)
         {
@@ -116,7 +116,7 @@ public class JoystickController : ScriptableObject, IJoyPad
         }
     }
 
-    public void YellowButtonStop(InputEventArgs e)
+    public virtual void YellowButtonStop(InputEventArgs e)
     {
         if (YellowButtonReleased != null)
         {
@@ -124,7 +124,7 @@ public class JoystickController : ScriptableObject, IJoyPad
         }
     }
 
-    public void RedButtonFire(InputEventArgs e)
+    public virtual void RedButtonFire(InputEventArgs e)
     {
         if (RedButtonPressed != null)
         {
@@ -132,7 +132,7 @@ public class JoystickController : ScriptableObject, IJoyPad
         }
     }
 
-    public void RedButtonStop(InputEventArgs e)
+    public virtual void RedButtonStop(InputEventArgs e)
     {
         if (RedButtonReleased != null)
         {
@@ -140,7 +140,7 @@ public class JoystickController : ScriptableObject, IJoyPad
         }
     }
 
-    public void GreenButtonFire(InputEventArgs e)
+    public virtual void GreenButtonFire(InputEventArgs e)
     {
         if (GreenButtonPressed != null)
         {
@@ -148,7 +148,7 @@ public class JoystickController : ScriptableObject, IJoyPad
         }
     }
 
-    public void GreenButtonStop(InputEventArgs e)
+    public virtual void GreenButtonStop(InputEventArgs e)
     {
         if (GreenButtonReleased != null)
         {
@@ -156,7 +156,7 @@ public class JoystickController : ScriptableObject, IJoyPad
         }
     }
 
-    public void BlueButtonFire(InputEventArgs e)
+    public virtual void BlueButtonFire(InputEventArgs e)
     {
         if (BlueButtonPressed != null)
         {
@@ -164,7 +164,7 @@ public class JoystickController : ScriptableObject, IJoyPad
         }
     }
 
-    public void BlueButtonStop(InputEventArgs e)
+    public virtual void BlueButtonStop(InputEventArgs e)
     {
         if (BlueButtonReleased != null)
         {
@@ -172,7 +172,7 @@ public class JoystickController : ScriptableObject, IJoyPad
         }
     }
 
-    public void WhiteButtonFire(InputEventArgs e)
+    public virtual void WhiteButtonFire(InputEventArgs e)
     {
         if (WhiteButtonPressed != null)
         {
@@ -180,7 +180,7 @@ public class JoystickController : ScriptableObject, IJoyPad
         }
     }
 
-    public void WhiteButtonStop(InputEventArgs e)
+    public virtual void WhiteButtonStop(InputEventArgs e)
     {
         if (WhiteButtonReleased != null)
         {
@@ -188,7 +188,7 @@ public class JoystickController : ScriptableObject, IJoyPad
         }
     }
 
-    public void BlackButtonFire(InputEventArgs e)
+    public virtual void BlackButtonFire(InputEventArgs e)
     {
         if (BlackButtonPressed != null)
         {
@@ -196,7 +196,7 @@ public class JoystickController : ScriptableObject, IJoyPad
         }
     }
 
-    public void BlackButtonStop(InputEventArgs e)
+    public virtual void BlackButtonStop(InputEventArgs e)
     {
         if (BlackButtonReleased != null)
         {
@@ -204,7 +204,7 @@ public class JoystickController : ScriptableObject, IJoyPad
         }
     }
 
-    public void StickRight(InputEventArgs e)
+    public virtual void StickRight(InputEventArgs e)
     {
         if (StickDirectionRight != null)
         {
@@ -212,7 +212,7 @@ public class JoystickController : ScriptableObject, IJoyPad
         }
     }
 
-    public void StickLeft(InputEventArgs e)
+    public virtual void StickLeft(InputEventArgs e)
     {
         if (StickDirectionLeft != null)
         {
@@ -220,7 +220,7 @@ public class JoystickController : ScriptableObject, IJoyPad
         }
     }
 
-    public void StickDown(InputEventArgs e)
+    public virtual void StickDown(InputEventArgs e)
     {
         if (StickDirectionDown != null)
         {
@@ -228,7 +228,7 @@ public class JoystickController : ScriptableObject, IJoyPad
         }
     }
 
-    public void StickUp(InputEventArgs e)
+    public virtual void StickUp(InputEventArgs e)
     {
         if (StickDirectionUp != null)
         {
@@ -236,7 +236,7 @@ public class JoystickController : ScriptableObject, IJoyPad
         }
     }
 
-    public void StickMiddle(InputEventArgs e)
+    public virtual void StickMiddle(InputEventArgs e)
     {
         if (StickDirectionMiddle != null)
         {
@@ -244,7 +244,7 @@ public class JoystickController : ScriptableObject, IJoyPad
         }
     }
 
-    public void KeyDownListener()
+    public virtual void KeyDownListener()
     {
         foreach (KeyValuePair<KeyCode, Action<InputEventArgs>> pair in FunctionDictionaryDown)
         {
@@ -256,7 +256,7 @@ public class JoystickController : ScriptableObject, IJoyPad
         }
     }
 
-    public void KeyUpListener()
+    public virtual void KeyUpListener()
     {
         foreach (KeyValuePair<KeyCode, Action<InputEventArgs>> pair in FunctionDictionaryUp)
         {
