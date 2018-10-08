@@ -1,12 +1,12 @@
 # Introduction
-This is the joystick example made for the ITU Joystick setup. This is just some barebones documentation.
+This is the Joystick example made for the ITU Joystick setup. This is just some barebones documentation.
 
 ## Please Note
 All of the input is handled like Joystick Buttons, even the stick. The reason for this is because whoever produced the Arcade Stick must
 have been overworked or something, because the axis goes from 1 to -2 which makes no sense at all.
 So to combat this we turned the stick into buttons. This doesn't actually matter because there is no in-between states on this stick
 like you'd find on an Xbox360 controller for example. It's 1 or 0. Go or No Go. The Black button is reserved as a "Start" button.
-It should only be used to access a menu to get out of the game, not as a playable button.
+It should only be used to access a menu to get out of the game or otherwise options menu, not as an action button.
 
 ## Button Mappings to Unity
 The board itself which controls all the input has two sides; P0 and P1. P0 is Player 1 and P1 is Player 2. However there is a catch;
@@ -42,7 +42,7 @@ away the Black "Start Button") and 4 buttons that acts as the Axis.
     * DOWN - Joystick1Button6
     * UP - Joystick1Button7
 
-With that in mind do not fret! A script have already been made to map all of this to System Events in C# using the `IJoyPad`
+With that in mind do not fret! A script have already been made to map all of this to System Events in C# using the `IJoypad`
 and `JoystickController` files. This is merely left here for your convenience, should you want to write your own implementation. You can make a controller object by Right-Clicking in your Assets and go to Create->Joystick Controller like so:
 
 ![Right Click Menu](https://i.imgur.com/oCShe7V.png)
@@ -50,11 +50,11 @@ and `JoystickController` files. This is merely left here for your convenience, s
 ## For Testing
 There is a controller already written for testing purposes since the arcade controller won't be physically accessible unless you test on the actual arcade (which will be seldom compared to on your computer). The `JoystickControllerTest` class is an extension of the `JoystickController` class, so you can still ask for a `JoystickController` in your production scripts and simply use the test Scripts in their place. When you create a `ScriptableObject` of type `JoystickControllerTest` it has a bunch of inputs that can be assigned from your keyboard (Or even a JoystickController port, should you wish to).
 
-# IJoyPad
-The `IJoyPad` interface is made for what is considered a necessary implementation for using this setup. But as mentioned above you can
-make your own implementation should you so desire. The JoyPad has a bunch of Event Callers that you can subscribe to like below:
+# IJoypad
+The `IJoypad` interface is made for what is considered a necessary implementation for using this setup. But as mentioned above you can
+make your own implementation should you so desire. The Joypad has a bunch of Event Callers that you can subscribe to like below:
 
-`IJoyPad.cs`
+`IJoypad.cs`
 ```c#
 ...
 event EventHandler YellowButtonPressed;
