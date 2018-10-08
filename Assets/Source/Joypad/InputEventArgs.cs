@@ -4,20 +4,17 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-namespace ITU.Joypad
+public class InputEventArgs : EventArgs
 {
-    public class InputEventArgs : EventArgs
+    private KeyCode Key;
+
+    public InputEventArgs(KeyCode key)
     {
-        private KeyCode Key;
+        this.Key = key;
+    }
 
-        public InputEventArgs(KeyCode key)
-        {
-            this.Key = key;
-        }
-
-        public KeyCode GetKey()
-        {
-            return Key;
-        }
+    public KeyCode GetKey()
+    {
+        return Key;
     }
 }
