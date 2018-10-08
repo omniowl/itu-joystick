@@ -327,7 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e690d3a39e1b0e4db33841c7984c748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joystick: {fileID: 11400000, guid: c47fbb83f5f378d4996c4425f8254a84, type: 2}
+  joystick: {fileID: 11400000, guid: 4822d3c8b59d6454a9e7f9ed146afcd6, type: 2}
   buttonImages:
   - {fileID: 1796973133}
   - {fileID: 960514421}
@@ -352,7 +352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e690d3a39e1b0e4db33841c7984c748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joystick: {fileID: 11400000, guid: 58fc4ae27f375444fa5d33a88f27d1c5, type: 2}
+  joystick: {fileID: 11400000, guid: 4770810a65f0d194286b6c73804cad49, type: 2}
   buttonImages:
   - {fileID: 431773104}
   - {fileID: 1724059952}
@@ -376,7 +376,6 @@ GameObject:
   - component: {fileID: 283381524}
   - component: {fileID: 283381526}
   - component: {fileID: 283381525}
-  - component: {fileID: 283381527}
   m_Layer: 5
   m_Name: VerticalDown
   m_TagString: Untagged
@@ -436,20 +435,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 283381523}
   m_CullTransparentMesh: 0
---- !u!114 &283381527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 283381523}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc0c9aa31a69a4898e2d8bb768d10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JoystickNumber: 1
-  JoystickButtonNumber: 6
-  PressedButtonAlpha: 0.2
 --- !u!1 &322003429
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,7 +503,6 @@ GameObject:
   - component: {fileID: 346364058}
   - component: {fileID: 346364060}
   - component: {fileID: 346364059}
-  - component: {fileID: 346364061}
   m_Layer: 5
   m_Name: HorizontalRight
   m_TagString: Untagged
@@ -578,20 +562,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 346364057}
   m_CullTransparentMesh: 0
---- !u!114 &346364061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 346364057}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc0c9aa31a69a4898e2d8bb768d10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JoystickNumber: 2
-  JoystickButtonNumber: 4
-  PressedButtonAlpha: 0.2
 --- !u!1 &357644734
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,7 +631,6 @@ GameObject:
   - component: {fileID: 431773103}
   - component: {fileID: 431773105}
   - component: {fileID: 431773104}
-  - component: {fileID: 431773106}
   m_Layer: 5
   m_Name: Button1
   m_TagString: Untagged
@@ -721,20 +690,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 431773102}
   m_CullTransparentMesh: 0
---- !u!114 &431773106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 431773102}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc0c9aa31a69a4898e2d8bb768d10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JoystickNumber: 2
-  JoystickButtonNumber: 0
-  PressedButtonAlpha: 0.2
 --- !u!1 &493564278
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,7 +700,6 @@ GameObject:
   - component: {fileID: 493564279}
   - component: {fileID: 493564281}
   - component: {fileID: 493564280}
-  - component: {fileID: 493564282}
   m_Layer: 5
   m_Name: HorizontalLeft
   m_TagString: Untagged
@@ -805,20 +759,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 493564278}
   m_CullTransparentMesh: 0
---- !u!114 &493564282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 493564278}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc0c9aa31a69a4898e2d8bb768d10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JoystickNumber: 1
-  JoystickButtonNumber: 5
-  PressedButtonAlpha: 0.2
 --- !u!1 &681490960
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,7 +769,6 @@ GameObject:
   - component: {fileID: 681490961}
   - component: {fileID: 681490963}
   - component: {fileID: 681490962}
-  - component: {fileID: 681490964}
   m_Layer: 5
   m_Name: Button3
   m_TagString: Untagged
@@ -889,20 +828,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 681490960}
   m_CullTransparentMesh: 0
---- !u!114 &681490964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 681490960}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc0c9aa31a69a4898e2d8bb768d10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JoystickNumber: 2
-  JoystickButtonNumber: 2
-  PressedButtonAlpha: 0.2
 --- !u!1 &688688598
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,7 +838,6 @@ GameObject:
   - component: {fileID: 688688599}
   - component: {fileID: 688688601}
   - component: {fileID: 688688600}
-  - component: {fileID: 688688602}
   m_Layer: 5
   m_Name: VerticalUp
   m_TagString: Untagged
@@ -973,20 +897,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 688688598}
   m_CullTransparentMesh: 0
---- !u!114 &688688602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 688688598}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc0c9aa31a69a4898e2d8bb768d10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JoystickNumber: 2
-  JoystickButtonNumber: 7
-  PressedButtonAlpha: 0.2
 --- !u!1 &726980525
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,7 +907,6 @@ GameObject:
   - component: {fileID: 726980526}
   - component: {fileID: 726980528}
   - component: {fileID: 726980527}
-  - component: {fileID: 726980529}
   m_Layer: 5
   m_Name: HorizontalRight
   m_TagString: Untagged
@@ -1057,20 +966,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 726980525}
   m_CullTransparentMesh: 0
---- !u!114 &726980529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 726980525}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc0c9aa31a69a4898e2d8bb768d10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JoystickNumber: 1
-  JoystickButtonNumber: 4
-  PressedButtonAlpha: 0.2
 --- !u!1 &788207906
 GameObject:
   m_ObjectHideFlags: 0
@@ -1081,7 +976,6 @@ GameObject:
   - component: {fileID: 788207907}
   - component: {fileID: 788207909}
   - component: {fileID: 788207908}
-  - component: {fileID: 788207910}
   m_Layer: 5
   m_Name: Button6
   m_TagString: Untagged
@@ -1141,20 +1035,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 788207906}
   m_CullTransparentMesh: 0
---- !u!114 &788207910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 788207906}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc0c9aa31a69a4898e2d8bb768d10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JoystickNumber: 1
-  JoystickButtonNumber: 9
-  PressedButtonAlpha: 0.2
 --- !u!1 &922901582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1227,7 +1107,6 @@ GameObject:
   - component: {fileID: 939474321}
   - component: {fileID: 939474323}
   - component: {fileID: 939474322}
-  - component: {fileID: 939474324}
   m_Layer: 5
   m_Name: Button6
   m_TagString: Untagged
@@ -1287,20 +1166,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 939474320}
   m_CullTransparentMesh: 0
---- !u!114 &939474324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 939474320}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc0c9aa31a69a4898e2d8bb768d10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JoystickNumber: 2
-  JoystickButtonNumber: 9
-  PressedButtonAlpha: 0.2
 --- !u!1 &960514419
 GameObject:
   m_ObjectHideFlags: 0
@@ -1311,7 +1176,6 @@ GameObject:
   - component: {fileID: 960514420}
   - component: {fileID: 960514422}
   - component: {fileID: 960514421}
-  - component: {fileID: 960514423}
   m_Layer: 5
   m_Name: Button2
   m_TagString: Untagged
@@ -1371,20 +1235,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 960514419}
   m_CullTransparentMesh: 0
---- !u!114 &960514423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 960514419}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc0c9aa31a69a4898e2d8bb768d10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JoystickNumber: 1
-  JoystickButtonNumber: 1
-  PressedButtonAlpha: 0.2
 --- !u!1 &1031955037
 GameObject:
   m_ObjectHideFlags: 0
@@ -1395,7 +1245,6 @@ GameObject:
   - component: {fileID: 1031955038}
   - component: {fileID: 1031955040}
   - component: {fileID: 1031955039}
-  - component: {fileID: 1031955041}
   m_Layer: 5
   m_Name: Button4
   m_TagString: Untagged
@@ -1455,20 +1304,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031955037}
   m_CullTransparentMesh: 0
---- !u!114 &1031955041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1031955037}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc0c9aa31a69a4898e2d8bb768d10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JoystickNumber: 2
-  JoystickButtonNumber: 3
-  PressedButtonAlpha: 0.2
 --- !u!1 &1250619165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1537,7 +1372,6 @@ GameObject:
   - component: {fileID: 1334082473}
   - component: {fileID: 1334082475}
   - component: {fileID: 1334082474}
-  - component: {fileID: 1334082476}
   m_Layer: 5
   m_Name: Button3
   m_TagString: Untagged
@@ -1597,20 +1431,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1334082472}
   m_CullTransparentMesh: 0
---- !u!114 &1334082476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1334082472}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc0c9aa31a69a4898e2d8bb768d10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JoystickNumber: 1
-  JoystickButtonNumber: 2
-  PressedButtonAlpha: 0.2
 --- !u!1 &1460996848
 GameObject:
   m_ObjectHideFlags: 0
@@ -1680,7 +1500,6 @@ GameObject:
   - component: {fileID: 1473777843}
   - component: {fileID: 1473777845}
   - component: {fileID: 1473777844}
-  - component: {fileID: 1473777846}
   m_Layer: 5
   m_Name: Button4
   m_TagString: Untagged
@@ -1740,20 +1559,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1473777842}
   m_CullTransparentMesh: 0
---- !u!114 &1473777846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1473777842}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc0c9aa31a69a4898e2d8bb768d10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JoystickNumber: 1
-  JoystickButtonNumber: 3
-  PressedButtonAlpha: 0.2
 --- !u!1 &1525766076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1764,7 +1569,6 @@ GameObject:
   - component: {fileID: 1525766077}
   - component: {fileID: 1525766079}
   - component: {fileID: 1525766078}
-  - component: {fileID: 1525766080}
   m_Layer: 5
   m_Name: VerticalUp
   m_TagString: Untagged
@@ -1824,20 +1628,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1525766076}
   m_CullTransparentMesh: 0
---- !u!114 &1525766080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1525766076}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc0c9aa31a69a4898e2d8bb768d10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JoystickNumber: 1
-  JoystickButtonNumber: 7
-  PressedButtonAlpha: 0.2
 --- !u!1 &1540406565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1966,7 +1756,6 @@ GameObject:
   - component: {fileID: 1573144721}
   - component: {fileID: 1573144723}
   - component: {fileID: 1573144722}
-  - component: {fileID: 1573144724}
   m_Layer: 5
   m_Name: Button5
   m_TagString: Untagged
@@ -2026,20 +1815,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1573144720}
   m_CullTransparentMesh: 0
---- !u!114 &1573144724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1573144720}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc0c9aa31a69a4898e2d8bb768d10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JoystickNumber: 2
-  JoystickButtonNumber: 8
-  PressedButtonAlpha: 0.2
 --- !u!1 &1692851685
 GameObject:
   m_ObjectHideFlags: 0
@@ -2050,7 +1825,6 @@ GameObject:
   - component: {fileID: 1692851686}
   - component: {fileID: 1692851688}
   - component: {fileID: 1692851687}
-  - component: {fileID: 1692851689}
   m_Layer: 5
   m_Name: Button5
   m_TagString: Untagged
@@ -2110,20 +1884,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1692851685}
   m_CullTransparentMesh: 0
---- !u!114 &1692851689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1692851685}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc0c9aa31a69a4898e2d8bb768d10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JoystickNumber: 1
-  JoystickButtonNumber: 8
-  PressedButtonAlpha: 0.2
 --- !u!1 &1724059950
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,7 +1894,6 @@ GameObject:
   - component: {fileID: 1724059951}
   - component: {fileID: 1724059953}
   - component: {fileID: 1724059952}
-  - component: {fileID: 1724059954}
   m_Layer: 5
   m_Name: Button2
   m_TagString: Untagged
@@ -2194,20 +1953,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1724059950}
   m_CullTransparentMesh: 0
---- !u!114 &1724059954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1724059950}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc0c9aa31a69a4898e2d8bb768d10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JoystickNumber: 2
-  JoystickButtonNumber: 1
-  PressedButtonAlpha: 0.2
 --- !u!1 &1784500595
 GameObject:
   m_ObjectHideFlags: 0
@@ -2276,7 +2021,6 @@ GameObject:
   - component: {fileID: 1787903621}
   - component: {fileID: 1787903623}
   - component: {fileID: 1787903622}
-  - component: {fileID: 1787903624}
   m_Layer: 5
   m_Name: VerticalDown
   m_TagString: Untagged
@@ -2336,20 +2080,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1787903620}
   m_CullTransparentMesh: 0
---- !u!114 &1787903624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1787903620}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc0c9aa31a69a4898e2d8bb768d10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JoystickNumber: 2
-  JoystickButtonNumber: 6
-  PressedButtonAlpha: 0.2
 --- !u!1 &1796973131
 GameObject:
   m_ObjectHideFlags: 0
@@ -2360,7 +2090,6 @@ GameObject:
   - component: {fileID: 1796973132}
   - component: {fileID: 1796973134}
   - component: {fileID: 1796973133}
-  - component: {fileID: 1796973135}
   m_Layer: 5
   m_Name: Button1
   m_TagString: Untagged
@@ -2420,20 +2149,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1796973131}
   m_CullTransparentMesh: 0
---- !u!114 &1796973135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1796973131}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc0c9aa31a69a4898e2d8bb768d10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JoystickNumber: 1
-  JoystickButtonNumber: 0
-  PressedButtonAlpha: 0.2
 --- !u!1 &1875848838
 GameObject:
   m_ObjectHideFlags: 0
@@ -2444,7 +2159,6 @@ GameObject:
   - component: {fileID: 1875848839}
   - component: {fileID: 1875848841}
   - component: {fileID: 1875848840}
-  - component: {fileID: 1875848842}
   m_Layer: 5
   m_Name: HorizontalLeft
   m_TagString: Untagged
@@ -2504,20 +2218,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1875848838}
   m_CullTransparentMesh: 0
---- !u!114 &1875848842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1875848838}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc0c9aa31a69a4898e2d8bb768d10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JoystickNumber: 2
-  JoystickButtonNumber: 5
-  PressedButtonAlpha: 0.2
 --- !u!1 &2046762794
 GameObject:
   m_ObjectHideFlags: 0
