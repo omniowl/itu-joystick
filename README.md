@@ -1,3 +1,5 @@
+You can find the .unitypackage file [here](https://github.com/omniowl/itu-joystick/blob/master/ITUJoypadController.unitypackage)
+
 # Introduction
 This is the Joystick example made for the ITU Joystick setup. This is just some barebones documentation.
 
