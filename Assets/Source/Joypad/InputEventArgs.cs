@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class InputEventArgs : EventArgs
 {
-    private KeyCode Key;
+    readonly KeyCode Key;
 
     public InputEventArgs(KeyCode key)
     {
